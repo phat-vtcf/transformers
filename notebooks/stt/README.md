@@ -3,7 +3,9 @@
 ### Tatsu Matsushima S4869214
 ### Leminh Nguyen S4923723
 
-To run the speaking clock application, you first need to install the required dependencies in your [virtual environment](https://virtualenv.pypa.io/en/latest/):
+This directory contains our inference reproduction to test the wav2vec Transformer model for the ASR task.
+
+To run the inference reproduction, you first need to install the required dependencies in your [virtual environment](https://virtualenv.pypa.io/en/latest/):
 
 ```sh
 python -m pip install -r requirements.txt
