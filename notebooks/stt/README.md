@@ -9,11 +9,11 @@ This directory contains our inference reproduction to test the wav2vec Transform
 
 ## Installation
 
-To run the inference reproduction, you first need to install the required dependencies. It is recommended to install them in a virtual environment, this can be a [Conda](https://docs.conda.io/en/latest/) or a [Virtualenv](https://virtualenv.pypa.io/en/latest/) environment.
+To run the inference reproduction: 
+
+- You first need to install the required dependencies. It is recommended to install them in a virtual environment, this can be a [Conda](https://docs.conda.io/en/latest/) or a [Virtualenv](https://virtualenv.pypa.io/en/latest/) environment.
 
 First install [Pytorch](https://pytorch.org/get-started/locally/) for your OS.
-
-- M
 
 Then install the remaining prerequisites:
 
@@ -29,7 +29,11 @@ Using Jupyter notebook:
 jupyter notebook
 ```
 
-Or upload it to [Google Colab](https://colab.research.google.com/) or [Deepnote](https://deepnote.com/dashboard).
+- Or open it directly in [Google Colab](https://colab.research.google.com/):
+
+| Notebook                                                     | Description                                                  |                                                              |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | -----------------------------------------------------------: |
+| [Inference of our Speechsounds North_wind recordings](https://colab.research.google.com/drive/1miIUmG_4x8fNbpJ0X8FrwxIJMm3SmUbx?usp=sharing) | Using the Wav2Vec2 Transformer model to convert our audio recording to text | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1miIUmG_4x8fNbpJ0X8FrwxIJMm3SmUbx?usp=sharing) |
 
 ## Original Repository
 The repository we reproduced is the wav2vec Transformer model for the ASR task from Hagging Face. The model is based on Facebook's Wav2Vec2, which is pretrained and fine-tuned on 960 hours audio data with 16kHz from LibriSpeech.
