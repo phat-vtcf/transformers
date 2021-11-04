@@ -37,7 +37,7 @@ python assignment_7_Tatsu_Leminh.py
 
 The original repository *'aims to make cutting-edge NLP easier to use for everyone'*. In this repository, we reproduced the Speech-to-Text (STT) inference using the wav2vec2 Transformer model implemented in the Hugging Face library. The model is based on Facebook's Wav2Vec2, which is pre-trained and fine-tuned on 960 hours of audio data with 16kHz from LibriSpeech.
 
-The model achieved 1.8/3.3 WER on the clean test data sets in experiments by Hugging Face. wav2vec 2.0 with one hour lablled data outperforms the previous state-of-art model on the 100-hour subset. Hence, the model demonstrates high accuracy with a limited amount of data.
+The model achieved 1.8/3.3 WER on the clean test datasets of the LibriSpeech corpus in experiments by Hugging Face. wav2vec 2.0 with one hour lablled data outperforms the previous state-of-art model on the 100-hour subset. Hence, the model demonstrates high accuracy with a limited amount of data.
 
 ## Our Task
 
