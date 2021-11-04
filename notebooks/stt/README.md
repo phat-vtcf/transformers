@@ -9,7 +9,7 @@ This directory contains our inference reproduction to test the wav2vec Transform
 
 ## Installation
 
-To run the inference reproduction:
+To run the inference reproduction, you have two possibilities:
 
 - You first need to install the required dependencies. It is recommended to install them in a virtual environment, this can be a [Conda](https://docs.conda.io/en/latest/) or a [Virtualenv](https://virtualenv.pypa.io/en/latest/) environment.
 
