@@ -16,7 +16,7 @@ def wav2vec_inference(wav_file):
     # load audio
     audio_input, sample_rate = librosa.load(wav_file, sr=16000)
 
-    # pad input values and return pt tensor
+    # tokenize audio input with the wav2vec2 transformer model
     input_values = processor(audio_input, sampling_rate=sample_rate, return_tensors="pt").input_values
 
     #INFERENCE
@@ -25,7 +25,7 @@ def wav2vec_inference(wav_file):
     logits = model(input_values).logits
     predicted_ids = torch.argmax(logits, dim=-1)
 
-    #transcribe
+    #transcribe prediction
     transcription = processor.decode(predicted_ids[0])
 
     return transcription
@@ -38,6 +38,7 @@ if __name__ == '__main__':
     leminh_recording = 'audio_samples/leminh-wind-09092021.wav'
     tatsu_recording = 'audio_samples/tatsu-wind-09092021.wav'
 
+    # get prediction of our audio recordings
     print()
     print(f'Original transcription:\n{original_text}')
     print()
