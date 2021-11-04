@@ -11,10 +11,10 @@ def wav2vec_inference(wav_file):
     # load pretrained model
     processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
     model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
-    
+
     # load audio
     audio_input, sample_rate = librosa.load(wav_file, sr=16000)
-    
+
     # pad input values and return pt tensor
     input_values = processor(audio_input, sampling_rate=sample_rate, return_tensors="pt").input_values
 
