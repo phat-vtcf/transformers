@@ -36,7 +36,7 @@ jupyter notebook
 | [Inference of our Speechsounds North_wind recordings](https://colab.research.google.com/drive/1miIUmG_4x8fNbpJ0X8FrwxIJMm3SmUbx?usp=sharing) | Using the Wav2Vec2 Transformer model to convert our audio recording to text | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1miIUmG_4x8fNbpJ0X8FrwxIJMm3SmUbx?usp=sharing) |
 
 ## Original Repository
-The repository we reproduced is the wav2vec Transformer model for the ASR task from Hagging Face. The model is based on Facebook's Wav2Vec2, which is pretrained and fine-tuned on 960 hours audio data with 16kHz from LibriSpeech.
+The repository that we reproduced is the wav2vec Transformer model for the ASR task from Hagging Face. The model is based on Facebook's Wav2Vec2, which is pretrained and fine-tuned on 960 hours audio data with 16kHz from LibriSpeech.
 
 The model acheived 1.8/3.3 WER on the clean test data sets in experiments by Hagging Face. wav2vec 2.0 with one hour labled data outperforms the previous state-of-art model on the 100 hour subset. Hence, the model demonstrates the high accuracy with limited amount of data.
 
@@ -49,4 +49,4 @@ Our task was to replicate the wav2vec Transformer model. We used the audio data 
 For the result, we expect [].
 
 ## Outcomes
-The output of the model achieved [] WER. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
+The output of the model achieved 8.85 WER. The calculation was done with JiWER module. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
