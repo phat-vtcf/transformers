@@ -30,4 +30,4 @@ def wav2vec_inference(wav_file):
     return transcription
 
 if __name__ == '__main__':
-    print(wav2vec_inference('audio_samples/leminh-wind-09092021.wav'))
+    print(wav2vec_inference('audio_samples/tatsu-wind-09092021.wav'))
