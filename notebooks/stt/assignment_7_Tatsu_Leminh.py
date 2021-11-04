@@ -36,6 +36,8 @@ if __name__ == '__main__':
     tatsu_recording = 'audio_samples/tatsu-wind-09092021.wav'
 
     print()
-    print(f'Prediction of {os.path.basename(leminh_recording)}: {wav2vec_inference(leminh_recording)}')
+    leminh_prediction = wav2vec_inference(leminh_recording)
+    print(f'Prediction of {os.path.basename(leminh_recording)}: {leminh_prediction}')
     print()
-    print(f'Prediction of {os.path.basename(tatsu_recording)}: {wav2vec_inference(tatsu_recording)}')
+    tatsu_prediction = wav2vec_inference(tatsu_recording)
+    print(f'Prediction of {os.path.basename(tatsu_recording)}: {tatsu_prediction}')
