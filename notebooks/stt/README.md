@@ -52,4 +52,4 @@ Our task was to reproduce an STT inference task using the wav2vec Transformer mo
 For the result, we expect [].
 
 ## Outcomes
-The output of the model achieved [] WER. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
+The output of the model achieved 8.85 WER. The calculation was done with JiWER module. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
