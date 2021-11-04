@@ -47,7 +47,8 @@ Our task was to reproduce an STT inference task using the wav2vec Transformer mo
 
 *"The North Wind and the Sun were disputing which was the stronger, when a traveller came along wrapped in a warm cloak. They agreed that the one who first succeeded in making the traveller take his cloak off should be considered stronger than the other. Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveller fold his cloak around him; and at last the North Wind gave up the attempt. Then the Sun shined out warmly, and immediately the traveller took off his cloak. And so the North Wind was obliged to confess that the Sun was the stronger of the two."*
 
-For the result, we expect [].
+### Expectations for results
+For the result, we expected that WERs for both audio inputs are lower than the original model since the model is trained with native speaker audio data. At the same time, we expected not siginifican high WER since we used the read speech data for testing. Also, Leminh learned English in the earlier age compared to Tatsu, thus we assumed that Leminh's WER is lower than Tatsu's WER. 
 
 ## Outcomes
-The output of the model achieved 8.85 and 22.12 WER for Leminh's and Tatsu's speech. The calculation was done with JiWER module. The results meet our expectations being described above. You can see how the model performed with our audio inputs and how we calculated WER for each audio in the given notebook. 
+The output of the model achieved 7.96 and 21.24 WER for Leminh's and Tatsu's speech. The calculation was done with JiWER module. The results meet our expectations being described above. You can see how the model performed with our audio inputs and how we calculated WER for each audio in the given notebook. 
