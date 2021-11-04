@@ -30,3 +30,14 @@ jupyter notebook
 ```
 
 Or upload it to [Google Colab](https://colab.research.google.com/) or [Deepnote](https://deepnote.com/dashboard).
+
+##Original Repository
+The repository we reproduced is the wav2vec Transformer model for the ASR task from Hagging Face. The model is based on Facebook's Wav2Vec2, which is pretrained and fine-tuned on 960 hours audio data with 16kHz from LibriSpeech.
+
+The model acheived 1.8/3.3 WER on the clean test data sets in experiments by Hagging Face. wav2vec 2.0 with one hour labled data outperforms the previous state-of-art model on the 100 hour subset. Hence, the model demonstrates the high accuracy with limited amount of data.
+
+##Our Task
+Our task was to replicate the wav2vec Transformer model. We used the audio data of Leminh's dictation of the part of "The North Wind and the Sun" speech to experiment the model. For the result, we expect [].
+
+##Outcomes
+The output of the model achieved [] WER. This meets/did not meet our expectation in terms of [].
