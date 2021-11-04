@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import torch
 import librosa
 import soundfile as sf
@@ -7,10 +8,11 @@ import soundfile as sf
 from datasets import load_dataset
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 
+# load pretrained model
+processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
+model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
+
 def wav2vec_inference(wav_file):
-    # load pretrained model
-    processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
-    model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
 
     # load audio
     audio_input, sample_rate = librosa.load(wav_file, sr=16000)
@@ -30,4 +32,10 @@ def wav2vec_inference(wav_file):
     return transcription
 
 if __name__ == '__main__':
-    print(wav2vec_inference('audio_samples/tatsu-wind-09092021.wav'))
+    leminh_recording = 'audio_samples/leminh-wind-09092021.wav'
+    tatsu_recording = 'audio_samples/tatsu-wind-09092021.wav'
+
+    print()
+    print(f'Prediction of {os.path.basename(leminh_recording)}: {wav2vec_inference(leminh_recording)}')
+    print()
+    print(f'Prediction of {os.path.basename(tatsu_recording)}: {wav2vec_inference(tatsu_recording)}')
