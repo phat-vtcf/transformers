@@ -37,7 +37,7 @@ The model acheived 1.8/3.3 WER on the clean test data sets in experiments by Hug
 
 ## Our Task
 
-Our task was to reproduce an STT inference task using the wav2vec Transformer model. We used the audio sample of Leminh's dictation of the "The North Wind and the Sun" text as the model input. You can see the full script for the speech dictation below.
+Our task was to reproduce an STT inference task using the wav2vec Transformer model. We used the audio sample of Leminh's and Tatsu's dictation of the "The North Wind and the Sun" text as the model input. You can see the full script for the speech dictation below.
 
 ### Script for the Leminh's speech
 
@@ -46,4 +46,4 @@ Our task was to reproduce an STT inference task using the wav2vec Transformer mo
 For the result, we expect [].
 
 ## Outcomes
-The output of the model achieved 8.85 WER. The calculation was done with JiWER module. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
+The output of the model achieved 8.85 and 22.12 WER for Leminh's and Tatsu's speech. The calculation was done with JiWER module. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
