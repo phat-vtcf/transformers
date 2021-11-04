@@ -27,7 +27,7 @@ Run an instance of your favourite notebook environment and open the `assignment_
 python assignment_7_Tatsu_Leminh.py
 ```
 
-2. Or open the infernce notebook directly in [Google Colab](https://colab.research.google.com/):
+2. Or open the inference notebook directly in [Google Colab](https://colab.research.google.com/drive/1miIUmG_4x8fNbpJ0X8FrwxIJMm3SmUbx?usp=sharing):
 
 | Notebook                                                     | Description                                                  |                                                              |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | -----------------------------------------------------------: |
