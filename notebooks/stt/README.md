@@ -29,13 +29,18 @@ jupyter notebook
 
 Or upload it to [Google Colab](https://colab.research.google.com/) or [Deepnote](https://deepnote.com/dashboard).
 
-##Original Repository
+## Original Repository
 The repository we reproduced is the wav2vec Transformer model for the ASR task from Hagging Face. The model is based on Facebook's Wav2Vec2, which is pretrained and fine-tuned on 960 hours audio data with 16kHz from LibriSpeech.
 
 The model acheived 1.8/3.3 WER on the clean test data sets in experiments by Hagging Face. wav2vec 2.0 with one hour labled data outperforms the previous state-of-art model on the 100 hour subset. Hence, the model demonstrates the high accuracy with limited amount of data.
 
-##Our Task
-Our task was to replicate the wav2vec Transformer model. We used the audio data of Leminh's dictation of the part of "The North Wind and the Sun" speech to experiment the model. For the result, we expect [].
+## Our Task
+Our task was to replicate the wav2vec Transformer model. We used the audio data of Leminh's dictation of "The North Wind and the Sun" speech to experiment the model. You can see the full script for the speech dictation below.
 
-##Outcomes
-The output of the model achieved [] WER. This meets/did not meet our expectation in terms of [].
+### Script for the Leminh's speech
+"The North Wind and the Sun were disputing which was the stronger, when a traveller came along wrapped in a warm cloak. They agreed that the one who first succeeded in making the traveller take his cloak off should be considered stronger than the other. Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveller fold his cloak around him; and at last the North Wind gave up the attempt. Then the Sun shined out warmly, and immediately the traveller took off his cloak. And so the North Wind was obliged to confess that the Sun was the stronger of the two."
+
+For the result, we expect [].
+
+## Outcomes
+The output of the model achieved [] WER. This meets/did not meet our expectation in terms of []. You can see the transcription we got in the experiment below.
