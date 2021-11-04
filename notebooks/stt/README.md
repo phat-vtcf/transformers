@@ -9,7 +9,7 @@ This directory contains our inference reproduction to test the wav2vec Transform
 
 ## Installation
 
-To run the inference reproduction: 
+To run the inference reproduction:
 
 - You first need to install the required dependencies. It is recommended to install them in a virtual environment, this can be a [Conda](https://docs.conda.io/en/latest/) or a [Virtualenv](https://virtualenv.pypa.io/en/latest/) environment.
 
@@ -22,12 +22,6 @@ python -m pip install -r requirements.txt
 ```
 
 Run an instance of your favorite notebook enviroment and open the `assignment_7_Tatsu_Leminh.ipynb` notebook.
-
-Using Jupyter notebook:
-
-```sh
-jupyter notebook
-```
 
 - Or open it directly in [Google Colab](https://colab.research.google.com/):
 
